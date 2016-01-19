@@ -1,3 +1,7 @@
+# projects-patternlab
+Atomic design using Patternlab for my Projects site.
+
+
 [![Build Status](https://travis-ci.org/pattern-lab/patternlab-node.png?branch=master)](https://travis-ci.org/pattern-lab/patternlab-node)
 
 ## About the Node Version of Pattern Lab
