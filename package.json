@@ -16,6 +16,7 @@
     "gulp-nodeunit": "0.0.5",
     "gulp-strip-banner": "0.0.2",
     "html-entities": "^1.2.0",
+    "gulp-sass": "^2.1.0",
     "mustache": "^2.2.0"
   },
   "keywords": [

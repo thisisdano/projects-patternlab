@@ -7,7 +7,7 @@ var pkg = require('./package.json'),
     strip_banner = require('gulp-strip-banner'),
     header = require('gulp-header'),
     nodeunit = require('gulp-nodeunit'),
-		//sass = require('gulp-sass'),
+	sass = require('gulp-sass'),
     browserSync = require('browser-sync').create();
 
 require('gulp-load')(gulp);
@@ -87,9 +87,9 @@ gulp.task('connect', ['lab'], function(){
   });
   gulp.watch('./source/css/style.css', ['cp:css']);
 
-  //suggested watches if you use scss
-  // gulp.watch('./source/css/**/*.scss', ['sass:style']);
-  // gulp.watch('./public/styleguide/*.scss', ['sass:styleguide']);
+//suggested watches if you use scss
+gulp.watch('./source/css/**/*.scss', ['sass:style']);
+gulp.watch('./public/styleguide/*.scss', ['sass:styleguide']);
 
   gulp.watch([
     './source/_patterns/**/*.mustache',
