@@ -1,2 +1,2 @@
 # projects-patternlab
-Patternlab for my Projects site
+Atomic design using Patternlab for my Projects site.
