@@ -108,24 +108,24 @@ gulp.task('nodeunit', function(){
 })
 
 //sass tasks, turn on if you want to use
-// gulp.task('sass:style', function(){
-// 	return gulp.src('./source/css/*.scss')
-// 		.pipe(sass({
-// 			outputStyle: 'expanded',
-// 			precision: 8
-// 		}))
-// 		.pipe(gulp.dest('./public/css'))
-//     .pipe(browserSync.stream());
-// })
-// gulp.task('sass:styleguide', function(){
-// 	return gulp.src('./public/styleguide/css/*.scss')
-//  		.pipe(sass({
-//  			outputStyle: 'expanded',
-//  			precision: 8
-//  		}))
-//  		.pipe(gulp.dest('./public/styleguide/css'))
-//     .pipe(browserSync.stream());
-// })
+gulp.task('sass:style', function(){
+return gulp.src('./source/css/*.scss')
+		.pipe(sass({
+			outputStyle: 'expanded',
+			precision: 8
+		}))
+		.pipe(gulp.dest('./public/css'))
+    .pipe(browserSync.stream());
+})
+gulp.task('sass:styleguide', function(){
+	return gulp.src('./public/styleguide/css/*.scss')
+ 		.pipe(sass({
+ 			outputStyle: 'expanded',
+ 			precision: 8
+ 		}))
+ 		.pipe(gulp.dest('./public/styleguide/css'))
+    .pipe(browserSync.stream());
+})
 
 gulp.task('lab-pipe', ['lab'], function(cb){
   cb();
